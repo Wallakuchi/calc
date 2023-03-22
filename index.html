@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calc. UI</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+   <div class="calc-wraper">
+       <div class="top">
+           <div class="top-left">CASIO</div>
+           <div class="top-middle">
+               <div class="charge"></div>
+           </div>
+           <div class="top-right">MJ-120Da</div>
+       </div>
+       <div class="middle">
+           <div class="screen" id="result"></div>
+       </div>
+       <div class="btn-wraper">
+           <div class="row">
+               <input type="button" value="DISP"/>
+               <input type="button" value="+/-"/>
+               <input type="button" value="Review"/>
+               <input type="button" value="correct"/>
+               <input type="button" value="^"/>
+               <input type="button" value="V"/>
+           </div>
+           <div class="row">
+                <input type="button" value="Tax+"/>
+                <input type="button" value="Tax-"/>
+                <input type="button" value="%" onclick="per()"/>
+                <input type="button" value="sqrt"/>
+                <input type="button" value="MU"/>
+                <input type="button" value="GT"/>
+           </div>
+           <div class="row">
+                <input type="button" value="<-" onclick="backspace()"/>
+                <input type="button" value="7"  onclick="clk(7)"/>
+                <input type="button" value="8"  onclick="clk(8)"/>
+                <input type="button" value="9"  onclick="clk(9)"/>
+                <input type="button" value="X"  onclick="addSign('X')"/>
+                <input type="button" value="/"  onclick="addSign('/')"/>
+           </div>
+           <div class="row">
+                <input type="button" value="C"   onclick="clr()"/>
+                <input type="button" value="4"   onclick="clk(4)"/>
+                <input type="button" value="5"   onclick="clk(5)"/>
+                <input type="button" value="6"   onclick="clk(6)"/>
+                <input type="button" value="-"   onclick="addSign('-')"/>
+                <input type="button" value="MRC"/>
+           </div>
+           <div class="row">
+                <input type="button" value="AC" />
+                <input type="button" value="1"  onclick="clk(1)"/>
+                <input type="button" value="2"  onclick="clk(2)"/>
+                <input type="button" value="3"  onclick="clk(3)"/>
+                <input type="button" value="+"  onclick="addSign('+')"/>
+                <input type="button" value="M-"/>
+           </div>
+           <div class="row">
+                <input type="button" value="0"   onclick="clk(0)"/>
+                <input type="button" value="00"  onclick="clk('00')"/>
+                <input type="button" value="."   onclick="clk('.')"/>
+                <input type="button" value="="   onclick="showResult('=')"/>
+                <input type="button" value=""    />
+                <input type="button" value="M+"/>
+           </div>
+       </div>
+   </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
