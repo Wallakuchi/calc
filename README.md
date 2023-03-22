@@ -1,1 +1,1 @@
-# calc
+A javaScript based calculator.
